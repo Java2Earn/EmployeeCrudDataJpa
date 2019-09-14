@@ -1,0 +1,18 @@
+
+** GIT WAS CREATED BY LINUS TORVALD(WHO HAS CREATED LINUX KERNEL)
+
+
+** git is distributed version control system.
+
+SCM-cource code management
+
+cvcs-->centralized version control system
+dvsc-->distributed version control system(git is dvsc)
+
+distributed means every one will have their won copy(locca repository).
+
+
+
+github
+gitlab
+bitbucket-->atlassian(jira given by atlassian)
