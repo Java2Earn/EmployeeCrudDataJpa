@@ -16,6 +16,10 @@ public class LamdaWithCollections2
 		ae.add(26);
 		ae.add(20);
 		System.out.println(ae);
+		ae.stream().forEach(i -> {
+			System.out.println("the elements are " + i);
+		});
+		
 		ae.stream().forEach(System.out::println);
 	}
 }
