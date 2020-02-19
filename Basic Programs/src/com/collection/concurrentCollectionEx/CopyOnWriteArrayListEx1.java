@@ -1,8 +1,6 @@
 package com.collection.concurrentCollectionEx;
-
 import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
-
 public class CopyOnWriteArrayListEx1 {
 	public static void main(String[] args) {
 		ArrayList al = new ArrayList();

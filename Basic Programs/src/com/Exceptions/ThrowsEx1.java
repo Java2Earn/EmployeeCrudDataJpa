@@ -9,13 +9,14 @@ class Cal {
 public class ThrowsEx1 {
 	public static void main(String[] args) {
 		Cal ob = new Cal();
+					try {
+						ob.div("10","2");
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				
 		
-			try {
-				ob.div("10","0");
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		
 	}
 }

@@ -1,26 +1,19 @@
 package com.Threads;
 class A {
-	public synchronized void display(String msg)
-	{
-		System.out.print("[" + msg);
+	public synchronized  void display(String msg)
+	{  System.out.print("[" + msg);
 			try {
-				Thread.sleep(5000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		System.out.println("]");
-	}}
+	Thread.sleep(5000);} catch (InterruptedException e) {e.printStackTrace();}
+		System.out.println("]");}}
 class B extends Thread{
 	String msg;
 	A a;// has-a 
-	B(A fp, String str) {
-		a = fp;
-		msg = str;
-		this.start();
-	}
+	B(A a, String msg) {
+		this.a = a;
+		this.msg = msg;
+		this.start();}
 	public void run() {
-		a.display(msg);
-	}}
+		a.display(msg);}}
 public class ThreadWithOutSync {
 	public static void main(String[] args) {
 		A fnew = new A();

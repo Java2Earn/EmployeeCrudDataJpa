@@ -1,25 +1,24 @@
 package com.Collections;
-import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 public class HashSetEx
 {
 	public static void main(String[] args) throws IOException 
 	{
-		File f=new File("welcome.txt");
-		f.createNewFile();
-		String s=f.getAbsolutePath();
-		System.out.println(s);
-		System.out.println("successs");
-		long b=f.length();
-		System.out.println(f.length()/1024);
-		/*Scanner sc=new Scanner(System.in);
-		System.out.println("Enter username");
-		String name=sc.next();
-		name +=sc.nextLine();
+	TreeSet set=new TreeSet();
+	
+	set.add(12);
+	set.add(14);
+	set.add(90);
+	set.add(190);
+	set.add(13);
+	set.add(1);
+	set.add(12);
+	System.out.println(set);
 		
-		System.out.println(name);*/
+		
 	}
 	
 

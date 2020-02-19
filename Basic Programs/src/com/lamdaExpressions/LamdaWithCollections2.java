@@ -1,25 +1,23 @@
 package com.lamdaExpressions;
 
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Set;
 
 public class LamdaWithCollections2 
 {
 
 	public static void main(String[] args) 
 	{
-		ArrayList<Integer> ae=new  ArrayList<Integer>();
-		ae.add(23);
-		ae.add(13);
-		ae.add(43);
-		ae.add(22);
-		ae.add(26);
-		ae.add(20);
+		HashMap<Integer,String> ae=new  HashMap<Integer,String>();
+		ae.put(23,"suresh");
+		ae.put(13,"suresh");
+		ae.put(43,"suresh");
+		ae.put(22,"suresh");
+		ae.put(26,"suresh");
+		ae.put(20,"suresh");
 		System.out.println(ae);
-		ae.stream().forEach(i -> {
-			System.out.println("the elements are " + i);
-		});
-		
-		ae.stream().forEach(System.out::println);
+			Set<Entry<Integer, String>> set=ae.entrySet();	
+		set.stream().forEach(System.out::println);
 	}
 }

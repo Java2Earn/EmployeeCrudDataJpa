@@ -23,10 +23,7 @@ public class LamdaWithCollectionsAndStreams {
 		
 		System.out.println("map to print double value " + l1);
 
-		System.out.println("increment the existing value using map " + l1);
-		
-		
-		long cn = al.stream().count();
+	long cn = al.stream().count();
 		System.out.println("it will count no of elements " + cn);
 		
 		List<Integer> l2 = al.stream()

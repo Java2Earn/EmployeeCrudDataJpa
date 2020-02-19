@@ -22,7 +22,8 @@ class Task2 implements Runnable
 {
 	public void run() {
 		Date date=new Date();
-		System.out.println(Thread.currentThread().getName()+"  "+new SimpleDateFormat("HH:mm:ss").format(date));
+		System.out.println
+(Thread.currentThread().getName()+"  "+new SimpleDateFormat("HH:mm:ss").format(date));
 	try {
 		Thread.sleep(4000);
 	} catch (InterruptedException e) {

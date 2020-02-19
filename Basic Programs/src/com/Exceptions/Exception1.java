@@ -11,10 +11,10 @@ class Exception1 {
 			int c = a / b;
 			System.out.println("division is " + c);
 		} catch (Exception e) {
-			System.out.println("dont enter zer as denominator");
+			//System.out.println("dont enter zer as denominator");
 			//System.out.println(e);
 			//e.printStackTrace();
-			//System.out.println(e.getMessage());
+			System.out.println(e.getMessage());
 		}
 		System.out.println("remaining 1000 lines of code");
 	}

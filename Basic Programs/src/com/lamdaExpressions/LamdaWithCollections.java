@@ -3,9 +3,7 @@ package com.lamdaExpressions;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
 public class LamdaWithCollections {
-
 	public static void main(String[] args) 
 	{
 		ArrayList<Integer> ae=new  ArrayList<Integer>();
@@ -17,15 +15,10 @@ public class LamdaWithCollections {
 		ae.add(20);
 		System.out.println(ae);
 	List<Integer> l=ae.stream().filter(i->i%2==0).collect(Collectors.toList());
-
 	System.out.println(l);
-	
 	List<Integer> l1=ae.stream().map(i->i+5).collect(Collectors.toList());
-	
 	System.out.println(l1);
-	
  long numCount=ae.stream().filter(i->i>20).count();
-	
 	System.out.println(numCount);
 	}
 }

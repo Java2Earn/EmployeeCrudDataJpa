@@ -5,8 +5,7 @@ class ParentEx {
 		this(122);
 		System.out.println("dafault constructor of parent");}
 	ParentEx(int a) 
-	{
-		//this();
+	{   //this();
 		System.out.println("Parent class parameterized constuructor"+a);
 	}
 	public void m1()
@@ -14,13 +13,12 @@ class ParentEx {
 class SuperEx  extends ParentEx
 {static	int a=20;
 	SuperEx() 
-	{
-		//super() ;//parent constructor
+	{	//super();
 		super.m1();
 		this.m1();
 		System.out.println(this.a);//20
 		System.out.println(super.a);//10
-		System.out.println(this);
+		System.out.println(this);//heap area address
 		System.out.println("child class constuructor");}
 	public void m1()
 	{System.out.println("child class method");}

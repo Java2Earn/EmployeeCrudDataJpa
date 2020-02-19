@@ -9,7 +9,7 @@ SCM-cource code management
 cvcs-->centralized version control system
 dvsc-->distributed version control system(git is dvsc)
 
-distributed means every one will have their won copy(locca repository).
+distributed means every one will have their own copy(local repository).
 
 
 

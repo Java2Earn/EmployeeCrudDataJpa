@@ -1,30 +1,17 @@
-import java.util.ArrayList;
+import java.util.TreeSet;
+
 
 
 public class ArrayListEx
 {
 public static void main(String[] args) {
 	
-ArrayList al=new ArrayList();
-	al.add("suresh");
-	al.add("naresh");
-	al.add("ramesh");
-	al.add("suresh");
-	al.add("rajesh");
-	//System.out.println(al);
-	
-	ArrayList al1=new ArrayList();	
-	
-	al1.add(123);
-	al1.add(143);
-	al1.add(12);
-	al1.add('x');
-	al1.add(true);
-	al1.addAll(al);
-	System.out.println(al1);
-	al1.removeAll(al);
-	System.out.println(al1);
-	
-	
+	TreeSet al=new TreeSet();
+	al.add(123);
+	al.add(90);
+	al.add(14);
+	al.add(1);
+	al.add(12);
+	System.out.println(al);
 }
 }

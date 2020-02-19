@@ -18,7 +18,7 @@ class A {
 class Test {
 	public static void main(String[] args) {
 		A.add();
-		A.add('c','a');
+		A.add('v','h');
 		A.add(12.123f,20.12f);
 		A.add(12.9f,20);
 		A.add(12,20.14f);}}

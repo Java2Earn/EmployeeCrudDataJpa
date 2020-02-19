@@ -1,28 +1,21 @@
 package com.Collections1;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map.Entry;
-import java.util.Set;
+import java.util.TreeMap;
 public class HashMapEx
 {
 public static void main(String[] args) 
 {
-HashMap<String,Integer> hm=new HashMap<String,Integer>();
-hm.put("sandeep",100);///entry
-System.out.println(hm);
-Object o=hm.put("sandeep",2);
-System.out.println(o);
-System.out.println(hm);
-hm.put("nayak",3);
-hm.put("srikanth",4);
-System.out.println(hm);
-System.out.println(hm.size());
-Object obj=hm.remove("srikanth");
-System.out.println(obj);
-System.out.println(hm);
-
-Set<Entry<String,Integer>> s=hm.entrySet();
-
+	TreeMap hm=new TreeMap();
+		hm.put(129,"suresh");
+		hm.put(198,"naresh");
+		hm.put(125,"suresh");
+		hm.put(126,"ramesh");
+		hm.put(127,"rajesh");
+		hm.put(128,"yogesh");
+	System.out.println(hm);
+	
+	
+/*
+Set<Entry<String,Integer>> s=hm.entrySet();8
 Iterator<Entry<String, Integer>> itr=s.iterator();
 
 while(itr.hasNext())
@@ -30,7 +23,7 @@ while(itr.hasNext())
 	Entry<String, Integer> e=itr.next();
 	System.out.print(e.getKey()+"  ");
 	System.out.println(e.getValue());
-}
+}*/
 
 
 

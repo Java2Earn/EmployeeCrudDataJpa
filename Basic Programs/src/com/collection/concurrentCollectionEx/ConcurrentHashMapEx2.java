@@ -1,21 +1,18 @@
 package com.collection.concurrentCollectionEx;
-
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-
 public class ConcurrentHashMapEx2 extends Thread {
-	static ConcurrentHashMap chm = new ConcurrentHashMap();
+	static HashMap chm = new HashMap();
 	public void run() {
-		try {
-			Thread.sleep(2000);} catch (InterruptedException ie) {ie.printStackTrace();}
+		try {Thread.sleep(2000);} catch (InterruptedException ie) {ie.printStackTrace();}
 		System.out.println("child thread got chance");
-		chm.put(40, "welcome to IBM");}
+		chm.put(40, "welcome to IBM");
+	}
 	public static void main(String[] args) throws InterruptedException {
 		chm.put(10, "welcome");
 		chm.put(20, "hello");
 		chm.put(30, "hai");
-
 		ConcurrentHashMapEx2 t = new ConcurrentHashMapEx2();
 		t.start();
 		Set s = chm.keySet();
@@ -27,5 +24,4 @@ public class ConcurrentHashMapEx2 extends Thread {
 			System.out.println("current key is.. : " + i1+ " and value :"
 					+ chm.get(i));
 			Thread.sleep(1000);}
-		System.out.println(chm);
-}}
+		System.out.println(chm);}}

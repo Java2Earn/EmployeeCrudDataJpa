@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 public class Test1 {
 	public static void main(String[] args)throws IOException, ClassNotFoundException
 	{
-		FileInputStream fis=new FileInputStream("cit.txt");
+		FileInputStream fis=new FileInputStream("anuragemp.txt");
 		ObjectInputStream ois=new ObjectInputStream(fis);
 		Emp e2=(Emp) ois.readObject();
 		System.out.println(e2.getId());

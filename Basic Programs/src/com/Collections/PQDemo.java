@@ -10,7 +10,7 @@ queue.add("c");
 queue.add("d");  
 queue.add("e"); 
   System.out.println(queue); 
-  System.out.println(queue.element());
+  System.out.println(queue.element());//z
   System.out.println(queue.peek());
   System.out.println("head:"+queue.poll()); //null 
 System.out.println("head:"+queue.remove()); //exception
