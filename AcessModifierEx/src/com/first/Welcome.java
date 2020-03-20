@@ -15,7 +15,7 @@ public class Welcome extends A {
 	}
 	public static void main(String args[]) {
 		
-		System.out.println("updated in GIT");
+		System.out.println("updated in GIT with new branch");
 		Welcome e = new Welcome();
 		e.add();
 	}}
