@@ -6,7 +6,7 @@
 
 SCM-cource code management
 
-cvcs-->centralized version control system
+cvcs-->centralized version control system(SVN)
 dvsc-->distributed version control system(git is dvsc)
 
 distributed means every one will have their own copy(local repository).
