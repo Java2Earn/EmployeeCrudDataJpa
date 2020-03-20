@@ -11,8 +11,22 @@ dvsc-->distributed version control system(git is dvsc)
 
 distributed means every one will have their own copy(local repository).
 
+Trunk based development
 
+for mac git is pre-installed
 
 github
 gitlab
 bitbucket-->atlassian(jira given by atlassian)
+
+
+
+git setup
+
+
+
+
+
+
+
+
